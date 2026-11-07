@@ -1,0 +1,10 @@
+java.version=17.0.21
+java.vm=OpenJDK 64-Bit Server VM
+os=Linux amd64
+available_processors=9
+cpu=model name	: AMD EPYC 9V74 80-Core Processor
+jvm_arguments=[-Xms128m, -Xmx512m]
+seed=20261107
+warmup_batches=2
+measured_batches=5
+note=Instrumented single-threaded JVM; timings are machine-dependent.

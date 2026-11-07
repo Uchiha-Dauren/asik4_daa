@@ -1,0 +1,27 @@
+Validation on Java 17.0.21
+Build command: mvn package
+Result: BUILD SUCCESS
+
+kz.aitu.city.EditDistanceTest: tests=4, failures=0, errors=0, skipped=0
+  PASS oneHundredSeededRandomPairsAgree
+  PASS countersMeasureWorkAndReset
+  PASS emptyAndSingleCharacterStrings
+  PASS referenceValues
+kz.aitu.city.KmpLpsTest: tests=2, failures=0, errors=0, skipped=0
+  PASS simpleAndEmptyPatterns
+  PASS referenceArrays
+kz.aitu.city.StringSearchTest: tests=6, failures=0, errors=0, skipped=0
+  PASS referenceAndOverlappingMatches
+  PASS oneHundredSeededRandomTextsAgreeWithIndexOf
+  PASS emptyPatternThrowsEvenForEmptyText
+  PASS noMatchExactMatchAndBoundaries
+  PASS longerPatternAndEmptyTextReturnEmpty
+  PASS countersIncludePreprocessingAndReset
+
+JUnit total: 12 tests, 0 failures, 0 errors, 0 skipped.
+Randomized checks: 100 edit pairs and 100 search text/pattern pairs.
+CSV validation: 570 runs, 114 groups of 5; all answers and input hashes agree within each shared input.
+Counter checks: resets, stable per-run counts, DP state counts, identical-recursion counts, near-match search counts.
+Timing check: positive values, time_ms = batch_time_ms / batch_iterations.
+Demo check: edit distances 2/2/2; both searches [10, 25].
+Report check: 4 PDF pages, all visually inspected; 4 labeled plots with takeaways.
