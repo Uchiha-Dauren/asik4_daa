@@ -7,8 +7,6 @@ public class KmpSearch implements StringSearch {
     private long searchComparisons;
     private long lpsComparisons;
 
-    // lps[i] is the length of the longest proper prefix of p[0..i]
-    // that is also its suffix. Public so tests can check it independently.
     public int[] lps(String p) {
         lpsComparisons = 0;
         int[] lps = new int[p.length()];
@@ -43,10 +41,10 @@ public class KmpSearch implements StringSearch {
                 j++;
                 if (j == pattern.length()) {
                     matches.add(i - j);
-                    j = prefix[j - 1]; // Keep a matching suffix, including overlaps.
+                    j = prefix[j - 1]; 
                 }
             } else if (j > 0) {
-                j = prefix[j - 1]; // Text index i never moves backwards.
+                j = prefix[j - 1]; 
             } else {
                 i++;
             }
