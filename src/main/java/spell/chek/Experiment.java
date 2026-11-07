@@ -10,7 +10,6 @@ import java.util.HexFormat;
 import java.util.List;
 import java.util.Locale;
 
-/** Fixed experimental protocol; every CSV row is one measured batch/run. */
 public class Experiment {
     private static final int RUNS = 5;
     private static final int WARMUPS = 2;

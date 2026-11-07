@@ -2,7 +2,6 @@ package spell.chek;
 
 import java.util.Random;
 
-/** Each input has its own seed, independent of algorithm order or timing. */
 public class InputGenerator {
     public static final long SEED = 20261107L;
     public record Pair(String first, String second) {}
