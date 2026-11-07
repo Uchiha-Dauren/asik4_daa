@@ -3,9 +3,7 @@ package spell.chek;
 public class RecursiveEditDistance implements EditDistance {
     private long states;
 
-    // State: D(i,j) = distance between the first i characters of a and first j of b.
-    // Transition: equal last chars -> D(i-1,j-1); otherwise 1 + min(delete, insert, replace).
-    // Base: D(0,j)=j and D(i,0)=i. No cache: repeated states are recomputed.
+ 
     @Override
     public int distance(String a, String b) {
         states = 0;

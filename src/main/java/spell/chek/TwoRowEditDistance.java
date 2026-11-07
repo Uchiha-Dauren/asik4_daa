@@ -2,10 +2,6 @@ package spell.chek;
 
 public class TwoRowEditDistance implements EditDistance {
     private long states;
-
-    // State: previous[j]=D(i-1,j), current[j]=D(i,j), for prefix distances D.
-    // Transition: equal -> previous[j-1]; otherwise 1+min(previous[j],current[j-1],previous[j-1]).
-    // Base: previous[j]=j for row 0; current[0]=i for each new row.
     @Override
     public int distance(String a, String b) {
         states = 0;

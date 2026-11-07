@@ -3,9 +3,6 @@ package spell.chek;
 public class TableEditDistance implements EditDistance {
     private long states;
 
-    // State: dp[i][j] = distance between prefixes a[0..i) and b[0..j).
-    // Transition: equal -> dp[i-1][j-1]; otherwise 1+min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1]).
-    // Base: dp[0][j]=j and dp[i][0]=i.
     @Override
     public int distance(String a, String b) {
         states = 0;
