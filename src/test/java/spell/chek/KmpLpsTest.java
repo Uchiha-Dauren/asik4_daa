@@ -1,4 +1,4 @@
-package kz.aitu.city;
+package spell.chek;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

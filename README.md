@@ -25,7 +25,7 @@ From this project's root:
 
 ```bash
 mvn package
-java -Xms128m -Xmx512m -cp target/classes kz.aitu.city.Experiment
+java -Xms128m -Xmx512m -cp target/classes spell.chek.Experiment
 ```
 
 This overwrites `results/results.csv` and `results/environment.txt` with a fresh
@@ -33,7 +33,7 @@ This overwrites `results/results.csv` and `results/environment.txt` with a fresh
 slower machine. An optional output directory keeps the original results:
 
 ```bash
-java -Xms128m -Xmx512m -cp target/classes kz.aitu.city.Experiment results-rerun
+java -Xms128m -Xmx512m -cp target/classes spell.chek.Experiment results-rerun
 ```
 
 The seed is **20261107**. Every case has two warmup batches and five measured
@@ -58,8 +58,8 @@ are already generated, so Python is optional for viewing/submitting the project.
 
 | Path | Purpose |
 | --- | --- |
-| `src/main/java/kz/aitu/city/` | Five algorithms, two family interfaces, input generator, experiment and demo |
-| `src/test/java/kz/aitu/city/` | JUnit 5 references, edges, random comparisons and counter checks |
+| `src/main/java/spell/chek/` | Five algorithms, two family interfaces, input generator, experiment and demo |
+| `src/test/java/spell/chek/` | JUnit 5 references, edges, random comparisons and counter checks |
 | `EXPERIMENT_PLAN.md` | Design card committed before measurements; full batching protocol |
 | `REPORT.pdf`, `REPORT.md` | Report with design card, plots, predictions, results and short answers |
 | `results/results.csv` | One row per measured batch/run, 570 rows |

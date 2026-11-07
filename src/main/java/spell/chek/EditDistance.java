@@ -1,4 +1,4 @@
-package kz.aitu.city;
+package spell.chek;
 
 /** Counter describes the most recent call; implementations are not thread-safe. */
 public interface EditDistance {

@@ -2,15 +2,15 @@ Validation on Java 17.0.21
 Build command: mvn package
 Result: BUILD SUCCESS
 
-kz.aitu.city.EditDistanceTest: tests=4, failures=0, errors=0, skipped=0
+spell.chek.EditDistanceTest: tests=4, failures=0, errors=0, skipped=0
   PASS oneHundredSeededRandomPairsAgree
   PASS countersMeasureWorkAndReset
   PASS emptyAndSingleCharacterStrings
   PASS referenceValues
-kz.aitu.city.KmpLpsTest: tests=2, failures=0, errors=0, skipped=0
+spell.chek.KmpLpsTest: tests=2, failures=0, errors=0, skipped=0
   PASS simpleAndEmptyPatterns
   PASS referenceArrays
-kz.aitu.city.StringSearchTest: tests=6, failures=0, errors=0, skipped=0
+spell.chek.StringSearchTest: tests=6, failures=0, errors=0, skipped=0
   PASS referenceAndOverlappingMatches
   PASS oneHundredSeededRandomTextsAgreeWithIndexOf
   PASS emptyPatternThrowsEvenForEmptyText

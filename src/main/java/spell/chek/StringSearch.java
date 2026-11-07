@@ -1,4 +1,4 @@
-package kz.aitu.city;
+package spell.chek;
 
 import java.util.List;
 

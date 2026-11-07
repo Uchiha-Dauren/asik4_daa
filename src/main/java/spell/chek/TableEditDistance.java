@@ -1,4 +1,4 @@
-package kz.aitu.city;
+package spell.chek;
 
 public class TableEditDistance implements EditDistance {
     private long states;

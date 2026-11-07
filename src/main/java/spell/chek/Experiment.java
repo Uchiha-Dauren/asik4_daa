@@ -1,4 +1,4 @@
-package kz.aitu.city;
+package spell.chek;
 
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
